@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Managed">
+      <UniqueIdentifier>{3d233b27-64c4-444c-b480-77c9a9260678}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Unmanaged">
+      <UniqueIdentifier>{ed7791d4-2ec9-4704-bcae-1658105fc058}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Unmanaged\Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Unmanaged\Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Managed\Classes">
+      <UniqueIdentifier>{a962b2e1-cb38-4a2e-b7b8-f639edb460d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Managed\Classes\S4">
+      <UniqueIdentifier>{1598196d-5d79-4b6e-a19f-b4b5c7604b4c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Managed\Classes\Hooks">
+      <UniqueIdentifier>{e3c04966-f817-4c9b-9e84-0abdaa07b183}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Managed\Classes\Internal">
+      <UniqueIdentifier>{a7defc05-42c2-4243-a0b8-e184ea92af7a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Lib">
+      <UniqueIdentifier>{2c2e82c4-12df-4d56-b071-3d3bec12bd05}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Resource.h">
+      <Filter>Unmanaged\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>Unmanaged\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="S4Values.h">
+      <Filter>Managed</Filter>
+    </ClInclude>
+    <ClInclude Include="S4Events.h">
+      <Filter>Managed\Classes\S4</Filter>
+    </ClInclude>
+    <ClInclude Include="NetEngineManager.h">
+      <Filter>Managed\Classes\Internal</Filter>
+    </ClInclude>
+    <ClInclude Include="CGameHostCallbackHooks.h">
+      <Filter>Managed\Classes\Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="IHook.h">
+      <Filter>Managed\Classes\Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="Helper.h">
+      <Filter>Managed</Filter>
+    </ClInclude>
+    <ClInclude Include="INetworkEngineHooks.h">
+      <Filter>Managed\Classes\Hooks</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pch.cpp">
+      <Filter>Unmanaged\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AssemblyInfo.cpp">
+      <Filter>Managed</Filter>
+    </ClCompile>
+    <ClCompile Include="S4Events.cpp">
+      <Filter>Managed\Classes\S4</Filter>
+    </ClCompile>
+    <ClCompile Include="NetEngineManager.cpp">
+      <Filter>Managed\Classes\Internal</Filter>
+    </ClCompile>
+    <ClCompile Include="CGameHostCallbackHooks.cpp">
+      <Filter>Managed\Classes\Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="INetworkEngineHooks.cpp">
+      <Filter>Managed\Classes\Hooks</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="app.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="app.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
