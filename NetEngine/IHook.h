@@ -10,6 +10,9 @@ namespace NetEngine::Hooks {
 	};
 }
 
+#pragma warning( push )
+#pragma warning( disable : 4003 )
+
 #define HOOK_INIT(name, _) { \
 		Logger::LogInfo(System::String::Format("Hooking function: "#name)); \
 		void* target = Get##name##Address(); \
@@ -33,6 +36,13 @@ void __declspec(naked) name##Hook() { \
 	_asm	pop eax \
 	_asm	jmp name##Orig \
 }	 \
+LPVOID* Get##name##Address() { \
+	return reinterpret_cast<LPVOID*>(S4Values::GetS4() + address); \
+}
+
+#define HOOK_DEFINE_NAKED(name, address) \
+void* name##Orig; \
+void name##Hook();	 \
 LPVOID* Get##name##Address() { \
 	return reinterpret_cast<LPVOID*>(S4Values::GetS4() + address); \
 }

@@ -10,5 +10,6 @@ namespace NetEngine::Hooks {
 }
 
 #define LIST_OF_NETWORK_ENGINE_HOOKS \
-	X(SendNetGameEvent, 0x001A7A90) \
-	X(SendNetEvent, 0x001A7990)
+	Y(SendNetGameEvent, 0x001A7A90) \
+	X(SendNetEvent, 0x001A7990) \
+	Y(ProcessNetGameEvent, 0x0F6240)
